@@ -1,5 +1,6 @@
 /*global describe*/
 /*global it*/
+/*global before*/
 var should = require('should'),
 	countdown = require('../lib/countdown'),
 	anagram = 'CHINALUNG'.toLowerCase();
