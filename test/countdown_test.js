@@ -38,5 +38,5 @@ describe('Find all words that can be created with letters in text', function () 
 		var wordArr = aresult.getWordsOfSize(LAUNCHING.length);
 		wordArr.should.containEql(LAUNCHING);
 	});
-	
+		
 });

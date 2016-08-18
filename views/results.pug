@@ -1,0 +1,16 @@
+//- Template for outputting results from anagram search
+.container
+  .row
+    .col-xs-12
+      |Longest word is #{result.longestWordSize} letters long
+  .row
+ 
+    //-
+      Uses the keys of result.words in reverse
+      Uses the range longestWordsSize -> 0 as property range
+      ignores 'undefined' properties
+     
+    - for (var i = result.longestWordSize; i >= 0; i -= 1)
+      if result.words[i]
+        each word in result.words[i]
+          .col-xs-4.col-md-1 #{word}

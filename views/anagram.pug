@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title #{title}
+    meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
+    script(src = 'https://code.jquery.com/jquery-3.1.0.min.js',
+      integrity='sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=',
+      crossorigin='anonymous')
+    link(rel = 'stylesheet', 
+      href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+      integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u',
+      crossorigin='anonymous')
+    script(src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+    integrity = 'sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', 
+    crossorigin = 'anonymous')
+    script(src = '/results.js')
+    script(src = '/runtime.js')
+    script(src = '/anagramAsync.js')
+
+  body
+    h1 Countdown Word Finder
+  
+    block content
+    .container
+      .row
+        #searchbox(class='col-xs-12 col-md-offset-2 col-md-8')
+          input(class = 'col-xs-8 col-md-6', type = 'text', id = 'anagram', name = 'anagram', placeholder = 'enter anagram')
+          button(id = 'result-btn', class = 'col-xs-4 col-md-2')
+            span(class='glyphicon glyphicon-search')
+            |  Query
+      .row
+        div(id = 'response')
