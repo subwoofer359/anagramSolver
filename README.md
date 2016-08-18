@@ -1,20 +1,22 @@
-
-
 # Countdown
+A simple [NodeJs]() application to solve anagrams similar to the one's in the TV show [Countdown](https://en.wikipedia.org/wiki/Countdown_(game_show))
+
+[*Running example*](http://countdown-subwoofer359.rhcloud.com/)
 
 
+## Tools
 
-## Usage
+**Frameworks**
 
+[Express Web framework](https://expressjs.com/)
 
+Html templating using [Pug JS library](https://github.com/pugjs/pug)
 
-## Developing
+**Testing**
 
+* [Mocha](https://mochajs.org/), 
+* [Supertest](https://github.com/visionmedia/supertest), 
+* [Should](https://shouldjs.github.io/)
 
-
-### Tools
-
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
-
-Nodeclipse is free open-source project that grows with your contributions.
+## Credit
+Word list used from http://www.mieliestronk.com/wordlist.html
