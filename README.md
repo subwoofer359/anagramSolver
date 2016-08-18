@@ -1,5 +1,5 @@
 # Countdown
-A simple [NodeJs]() application to solve anagrams similar to the one's in the TV show [Countdown](https://en.wikipedia.org/wiki/Countdown_(game_show))
+A simple [NodeJS](https://nodejs.org/en/) application to solve anagrams similar to the one's in the TV show [Countdown](https://en.wikipedia.org/wiki/Countdown_(game_show))
 
 [*Running example*](http://countdown-subwoofer359.rhcloud.com/)
 
@@ -10,7 +10,7 @@ A simple [NodeJs]() application to solve anagrams similar to the one's in the TV
 
 [Express Web framework](https://expressjs.com/)
 
-Html templating using [Pug JS library](https://github.com/pugjs/pug)
+[Pug JS library](https://github.com/pugjs/pug) HTML templating library
 
 **Testing**
 
@@ -20,3 +20,6 @@ Html templating using [Pug JS library](https://github.com/pugjs/pug)
 
 ## Credit
 Word list used from http://www.mieliestronk.com/wordlist.html
+
+###To Do
+Add a style to the html pages
