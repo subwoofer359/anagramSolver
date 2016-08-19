@@ -27,7 +27,7 @@ html
         form#searchbox(class='col-xs-12 col-md-offset-2 col-md-10')
           input(class = 'col-xs-8 col-md-7', type = 'text', 
                 id = 'anagram', name = 'anagram',
-                placeholder = 'enter anagram', pattern = '[a-z]{4,9}',
+                placeholder = 'enter anagram', pattern = '[a-zA-Z]{4,9}',
                 title = 'Word between 4 to 9 letters long')
           button(type= 'submit', id = 'result-btn', class = 'col-xs-4 col-md-2')
             span(class='glyphicon glyphicon-search')

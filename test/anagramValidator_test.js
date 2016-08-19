@@ -19,6 +19,11 @@ describe('validate anagrams', function () {
         result.valid.should.false();
     });
     
+    it('should reject anagrams are objects', function () {
+        var result = validator.validator({});
+        result.valid.should.false();
+    });
+    
     it('should reject anagrams containing numbers', function () {
         var result = validator.validator('abcde32');
         result.valid.should.false();
