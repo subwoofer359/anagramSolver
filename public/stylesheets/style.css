@@ -1,6 +1,21 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(49, 98, 191);
+}
+
+#title {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#response {
+	padding-top: 25px;
+	padding-left: 10px;
+}
+
+#wordResult {
+	padding-bottom: 10px;
+    font-weight: bold;
 }
 
 a {
