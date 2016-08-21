@@ -17,6 +17,62 @@ body {
 	padding-bottom: 10px;
     font-weight: bold;
 }
+#clock {
+  position: absolute;
+  background-image: url(../clock.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 1000px 1000px;
+  border-color: blue;
+  border-width: 5px;
+  border-style: solid;
+  width: 700px;
+  height: 700px;
+  opacity: 0.3;
+}
+@media(min-width: 700px)  {
+	#clock {
+		top: 5px;
+    	left: -140px;
+	}
+}
+
+@media(max-width: 699px)  {
+	#clock {
+		top: 70px;
+    	left: -265px;
+    	width: 564px;
+  		height: 555px;
+	}
+}
+
+#secondhand {
+  background-image: url(../hand.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: 4%;
+  left: 45%;
+  animation-name: countdown;
+  animation-delay: 2s;
+  animation-duration:30s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes countdown {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 8% 90%;
+  }
+  to {
+    transform: rotate(180deg);
+    transform-origin: 8% 90%;
+  }
+}
 
 a {
   color: #00B7FF;
