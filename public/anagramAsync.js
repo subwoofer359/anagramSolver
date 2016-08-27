@@ -7,17 +7,22 @@ function submitUrl() {
 		$response = $('#response');
 	
 	$response.html('');
+	$response.css('display', 'block');
 	
 	$.post('./getanagram', formData, function (data) {
 	    var myTemplate = window.template({result: data});
 		$response.html(myTemplate);
 	}).fail(function (data) {
 		if (data.responseText) {
-		    var message = JSON.parse(data.responseText);
-		    if (message.error) {
-		        $response.html('<small>' + message.error + '</small>');
-		    } else {
-		        $response.html('<small>' + data.responseText + '</small>');
+		    try {
+		        var message = JSON.parse(data.responseText);
+		        if (message.error) {
+		            $response.html('<small class="error">' + message.error + '</small>');
+		        } else {
+		            $response.html('<small class="error">' + data.responseText + '</small>');
+		        }
+		    } catch(error) {
+		        $response.html('<small class="error">' + data.responseText + '</small>');
 		    }
 		}
 	});

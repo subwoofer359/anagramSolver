@@ -1,6 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: rgb(49, 98, 191);
+  background-image: url(../grid.jpg);
 }
 
 #title {
@@ -11,6 +12,10 @@ body {
 #response {
 	padding-top: 25px;
 	padding-left: 10px;
+	background-color: rgba(255,255,255,0.7);
+    margin-top: 38px;
+    padding-bottom: 15px;
+    display: none;
 }
 
 #wordResult {
@@ -76,4 +81,9 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+.error {
+	font-weight: bold;
+	text-transform: capitalize;
 }

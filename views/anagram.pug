@@ -30,7 +30,9 @@ html
           input(class = 'col-xs-8 col-md-7', type = 'text', 
                 id = 'anagram', name = 'anagram',
                 placeholder = 'enter anagram', pattern = '[a-zA-Z]{4,9}',
-                title = 'Word between 4 to 9 letters long')
+                title = 'Word between 4 to 9 letters long',
+                autocomplete = 'off',
+                required = 'required')
           button(type= 'submit', id = 'result-btn', class = 'col-xs-4 col-md-2')
             span(class='glyphicon glyphicon-search')
             |  Query
