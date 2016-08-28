@@ -26,15 +26,18 @@ html
     block content
     .container
       .row
-        form#searchbox(class='col-xs-12 col-md-offset-2 col-md-10')
-          input(class = 'col-xs-8 col-md-7', type = 'text', 
+        form#searchbox(class='col-xs-12 col-md-offset-2 col-md-10 .form-inline')
+          div(class = 'form-group col-xs-9 col-md-7')
+            label(for = 'anagram' class = 'sr-only') Enter anagram 
+            input(class = 'input-lg form-control', type = 'text', 
                 id = 'anagram', name = 'anagram',
                 placeholder = 'enter anagram', pattern = '[a-zA-Z]{4,9}',
                 title = 'Word between 4 to 9 letters long',
                 autocomplete = 'off',
                 required = 'required')
-          button(type= 'submit', id = 'result-btn', class = 'col-xs-4 col-md-2')
-            span(class='glyphicon glyphicon-search')
-            |  Query
+          button(type= 'submit', id = 'result-btn', class = 'btn-lg')
+            span(class = 'glyphicon glyphicon-search')
+              span(class = 'hidden-xs')
+               |  Query
       .row
         div(id = 'response')
